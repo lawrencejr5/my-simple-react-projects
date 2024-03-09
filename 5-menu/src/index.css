@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background-color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-bottom: 2px solid grey;
+}
+.nav .logo {
+  font-weight: 600;
+  color: black;
+  font-size: 22px;
+  margin-left: 1rem;
+}
+.nav ul {
+  list-style-type: none;
+  display: flex;
+}
+.nav ul a {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+.nav ul li {
+  margin-right: 1rem;
+}
+.nav ul li .active {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+.content {
+  margin: 0 3rem;
+}
+.content .btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.btn-container .filter-btn {
+  background-color: #123456;
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 3px;
+  padding: 0.2rem 0.3rem;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+.menu-items {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu-items .menu-item {
+  width: 250px;
+  height: auto;
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 1rem;
+}
+.menu-item .wallpaper-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-item .wallpaper-name button {
+  background-color: #123456;
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 3px;
+}
+.menu-items .menu-item span {
+  font-size: 14px;
+}

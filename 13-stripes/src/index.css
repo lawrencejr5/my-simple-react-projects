@@ -1,0 +1,224 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  width: 100%;
+  display: flex;
+  background-color: #e86943;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+nav .header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem;
+  align-content: center;
+}
+nav .header .logo {
+  font-weight: 600;
+  font-size: 25px;
+  text-shadow: 1px 1px rgba(52, 51, 51, 0.443);
+}
+.header .bars {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.header .bars img {
+  width: 30px;
+  height: 17px;
+}
+nav .links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .links-container ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+nav .links-container ul li {
+  margin: 0 1rem;
+}
+nav .links-container ul li button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+nav .links-container .signin {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  width: 60px;
+  height: 30px;
+  margin-right: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  background-color: black;
+}
+.hero-container .hero-content {
+  height: 400px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-top: 0;
+  color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.hero-container .hero-content .header {
+  margin-top: 0;
+  font-size: 35px;
+}
+.hero-container .hero-content .hero-btn {
+  background-color: rgb(232, 105, 67);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+.hero-container img {
+  height: 500px;
+  width: 300px;
+  margin-top: 4rem;
+}
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(52, 51, 51, 0.443);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.sidebar-closed {
+  transform: scale(0);
+}
+.sidebar-closed .sidebar {
+  opacity: 0;
+}
+.sidebar {
+  height: 90vh;
+  width: 90%;
+  max-width: 600px;
+  background-color: white;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+.sidebar .close {
+  float: right;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.sidebar .links-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sidebar .links-container .sub-links {
+  margin: 0.5rem;
+}
+.sidebar .links-container .sub-links a {
+  color: grey;
+  text-decoration: none;
+  display: block;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+.sidebar .head-link {
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+}
+.sub-menu {
+  background-color: white;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 100px;
+  transform: translateX(-50%);
+  display: none;
+  transition: 0.5s;
+}
+.sub-menu-open {
+  display: block;
+}
+.sub-menu span {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.sub-menu ul {
+  list-style-type: none;
+  padding-left: 0.5rem;
+}
+.sub-menu ul li {
+  margin-top: 0.5rem;
+}
+.sub-menu ul li a {
+  color: grey;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 600px) {
+  .header .bars {
+    display: block;
+  }
+  nav .links-container {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hero-container img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .sidebar-container {
+    width: 0;
+    height: 0;
+  }
+  .sidebar {
+    opacity: 0;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .hero-container {
+    padding: 1rem 5rem;
+  }
+}

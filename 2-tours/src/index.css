@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  background-color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+main {
+  width: 100%;
+}
+main .main {
+  margin: 1rem;
+}
+main .header {
+  display: grid;
+  place-items: center;
+}
+main .underline {
+  margin-top: -2rem;
+  height: 4px;
+  width: 35px;
+  background-color: #123456;
+  display: flex;
+  justify-content: center;
+}
+.refresh_btn {
+  background-color: #123456;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 0.5px 0.5px 8px rgb(195, 194, 194);
+  padding: 0.2rem 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  background-color: white;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 12px rgb(197, 193, 193);
+  max-width: 300px;
+  height: 100%;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card b {
+  display: block;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.card .see {
+  color: blue;
+  font-size: 12px;
+  margin-left: 1rem;
+  border: 1px solid blue;
+  padding: 0 0.2rem;
+  cursor: pointer;
+}
+.card .btn {
+  display: block;
+  margin-top: 1rem;
+  background-color: #123456;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 0.5px 0.5px 8px rgb(195, 194, 194);
+  padding: 0.2rem 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}

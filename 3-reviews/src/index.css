@@ -1,0 +1,47 @@
+body {
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.5s;
+}
+main h1 {
+  text-align: center;
+  color: #012345;
+}
+.content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content .review-box {
+  width: 500px;
+  height: auto;
+  background-color: #012345;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px white;
+  transition: 0.5s;
+  line-height: 1;
+}
+.content .review-box img {
+  border-radius: 7px;
+}
+.content .review-box .btn {
+  margin: 0 0.7rem;
+  cursor: pointer;
+  background-color: aliceblue;
+  color: #012345;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: 0.2rem 0.3rem;
+}
+.content .review-box .random {
+  float: right;
+  border: 1px solid #000;
+}
